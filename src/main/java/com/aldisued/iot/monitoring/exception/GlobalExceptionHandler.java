@@ -15,4 +15,10 @@ public class GlobalExceptionHandler {
     public Map<String, String> handleSensorAlreadyExists(SensorAlreadyExistsException e) {
         return Map.of("message", e.getMessage());
     }
+
+    @ResponseStatus(HttpStatus.NOT_FOUND)
+    @ExceptionHandler(AlertNotFoundException.class)
+    public Map<String, String> handleAlertNotFound(AlertNotFoundException e) {
+        return Map.of("message", e.getMessage());
+    }
 }

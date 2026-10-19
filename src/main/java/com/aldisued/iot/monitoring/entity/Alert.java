@@ -27,11 +27,11 @@ public class Alert {
   public Alert(
           String message,
           LocalDateTime timestamp,
-          Sensor sensor, Sensor sensor1
+          Sensor sensor
   ) {
     this.message = message;
     this.timestamp = timestamp;
-    this.sensor = sensor1;
+    this.sensor = sensor;
   }
 
   public Long getId() {
