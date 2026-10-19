@@ -1,4 +1,4 @@
-package com.aldisued.iot.monitoring;
+package com.aldisued.iot.monitoring.exception;
 
 import java.util.UUID;
 
